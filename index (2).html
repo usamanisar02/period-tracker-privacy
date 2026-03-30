@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy – MyCycle Period Tracker | Tn Tech Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --rose:     #e8637a;
+      --rose-light: #fde8ec;
+      --rose-mid: #f4a7b4;
+      --cream:    #fdf6f0;
+      --text:     #2c1a20;
+      --muted:    #7a5560;
+      --border:   #f0d4da;
+      --white:    #ffffff;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.75;
+      font-size: 15px;
+    }
+
+    /* ── HERO ── */
+    header {
+      background: linear-gradient(135deg, #f9e4ea 0%, #fce7d6 100%);
+      padding: 60px 24px 50px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      width: 500px; height: 500px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(232,99,122,.12) 0%, transparent 70%);
+      top: -150px; left: 50%; transform: translateX(-50%);
+      pointer-events: none;
+    }
+    .badge {
+      display: inline-block;
+      background: var(--rose);
+      color: #fff;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 18px;
+    }
+    header h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: var(--text);
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+    header h1 em {
+      color: var(--rose);
+      font-style: italic;
+    }
+    header p.subtitle {
+      color: var(--muted);
+      font-size: 14px;
+      max-width: 480px;
+      margin: 0 auto;
+    }
+    .meta-pills {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 22px;
+    }
+    .meta-pills span {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 4px 14px;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    /* ── LAYOUT ── */
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+
+    /* ── SECTION ── */
+    section {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 32px 36px;
+      margin-bottom: 20px;
+      transition: box-shadow .2s;
+    }
+    section:hover {
+      box-shadow: 0 4px 24px rgba(232,99,122,.08);
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .icon-wrap {
+      width: 38px; height: 38px;
+      border-radius: 10px;
+      background: var(--rose-light);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+    h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.15rem;
+      color: var(--text);
+      font-weight: 400;
+    }
+
+    p { color: #4a3038; margin-bottom: 12px; }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 10px 0;
+    }
+    ul li {
+      padding: 6px 0 6px 22px;
+      position: relative;
+      color: #4a3038;
+      border-bottom: 1px dashed var(--border);
+    }
+    ul li:last-child { border-bottom: none; }
+    ul li::before {
+      content: '♡';
+      position: absolute; left: 0;
+      color: var(--rose-mid);
+      font-size: 12px;
+      top: 8px;
+    }
+
+    .highlight-box {
+      background: var(--rose-light);
+      border-left: 3px solid var(--rose);
+      border-radius: 0 8px 8px 0;
+      padding: 14px 18px;
+      margin: 14px 0;
+      font-size: 14px;
+      color: var(--text);
+    }
+
+    /* ── CONTACT CARD ── */
+    .contact-card {
+      background: linear-gradient(135deg, #e8637a 0%, #d4526a 100%);
+      color: #fff;
+      border-radius: 16px;
+      padding: 32px 36px;
+      margin-bottom: 20px;
+    }
+    .contact-card h2 {
+      color: #fff;
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.2rem;
+      margin-bottom: 8px;
+    }
+    .contact-card p { color: rgba(255,255,255,.85); margin-bottom: 8px; }
+    .contact-card a {
+      color: #fff;
+      font-weight: 500;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      text-align: center;
+      padding: 28px 24px;
+      border-top: 1px solid var(--border);
+      font-size: 12px;
+      color: var(--muted);
+    }
+    footer strong { color: var(--rose); }
+
+    @media (max-width: 520px) {
+      section { padding: 24px 20px; }
+      .contact-card { padding: 24px 20px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="badge">Privacy Policy</div>
+  <h1>MyCycle <em>Period Tracker</em></h1>
+  <p class="subtitle">Your health data stays private. Here's exactly how we handle it.</p>
+  <div class="meta-pills">
+    <span>📅 Effective: June 2025</span>
+    <span>🏢 Tn Tech Studio</span>
+    <span>🔒 GDPR Aware</span>
+  </div>
+</header>
+
+<main>
+
+  <!-- 1. Introduction -->
+  <section>
+    <div class="section-header">
+      <div class="icon-wrap">📋</div>
+      <h2>Introduction</h2>
+    </div>
+    <p>Welcome to <strong>MyCycle Period Tracker</strong>, developed by <strong>Tn Tech Studio</strong> (Muhammad Usama). This Privacy Policy explains how we collect, use, and protect your information when you use our app.</p>
+    <p>By using Period Tracker, you agree to the practices described in this policy. If you do not agree, please discontinue use of the app.</p>
+  </section>
+
+  <!-- 2. Information We Collect -->
+  <section>
+    <div class="section-header">
+      <div class="icon-wrap">🗂️</div>
+      <h2>Information We Collect</h2>
+    </div>
+    <p>We collect the following types of information to provide and improve our services:</p>
+    <ul>
+      <li><strong>Period & Cycle Data</strong> — dates, duration, flow intensity you log in the app</li>
+      <li><strong>Symptoms & Mood</strong> — optional health notes you record</li>
+      <li><strong>Account Data</strong> — email address used for Supabase authentication (if you create an account)</li>
+      <li><strong>Device Information</strong> — device type, OS version, app version for crash analytics</li>
+      <li><strong>Usage Data</strong> — anonymous interaction data to improve app features</li>
+    </ul>
+  </section>
+
+  <!-- 3. How We Use Your Data -->
+  <section>
+    <div class="section-header">
+      <div class="icon-wrap">⚙️</div>
+      <h2>How We Use Your Data</h2>
+    </div>
+    <ul>
+      <li>To provide period tracking, cycle predictions, and reminders</li>
+      <li>To sync your data securely across devices via Supabase</li>
+      <li>To display relevant advertisements via <strong>Google AdMob</strong></li>
+      <li>To fix bugs and improve app performance</li>
+      <li>To send optional push notifications (with your permission)</li>
+    </ul>
+    <div class="highlight-box">
+      🔒 We <strong>never sell</strong> your personal health data to third parties. Your cycle data is yours.
+    </div>
+  </section>
+
+  <!-- 4. Cloud Storage (Supabase) -->
+  <section>
+    <div class="section-header">
+      <div class="icon-wrap">☁️</div>
+      <h2>Cloud Storage — Supabase</h2>
+    </div>
+    <p>Your data is stored securely in <strong>Supabase</strong>, a cloud database service with industry-standard encryption (AES-256 at rest, TLS in transit).</p>
+    <ul>
+      <li>Data is stored under your unique user ID — not linked to your real name</li>
+      <li>Supabase servers comply with GDPR and SOC 2 standards</li>
+      <li>You can request full deletion of your data at any time</li>
+    </ul>
+    <p>Learn more: <a href="https://supabase.com/privacy" target="_blank" rel="noopener" style="color:var(--rose);">supabase.com/privacy</a></p>
+  </section>
+
+  <!-- 5. Advertising (AdMob) -->
+  <section>
+    <div class="section-header">
+      <div class="icon-wrap">📢</div>
+      <h2>Advertising — Google AdMob</h2>
+    </div>
+    <p>We use <strong>Google AdMob</strong> to display advertisements in <strong>MyCycle Period Tracker</strong>. AdMob may collect and use data to serve personalized ads based on your interests.</p>
+    <ul>
+      <li>AdMob may use your device's advertising ID</li>
+      <li>Ads are served in compliance with Google's policies</li>
+      <li>You can opt out of personalized ads via your device settings</li>
+    </ul>
+    <div class="highlight-box">
+      📱 <strong>Android:</strong> Settings → Google → Ads → Opt out of Ads Personalization<br/>
+    </div>
+    <p style="margin-top:12px">Learn more: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color:var(--rose);">policies.google.com/privacy</a></p>
+  </section>
+
+  <!-- 6. Data Sharing -->
+  <section>
+    <div class="section-header">
+      <div class="icon-wrap">🤝</div>
+      <h2>Data Sharing &amp; Third Parties</h2>
+    </div>
+    <p>We only share your data with the following trusted services, strictly to operate the app:</p>
+    <ul>
+      <li><strong>Supabase</strong> — cloud storage and authentication</li>
+      <li><strong>Google AdMob</strong> — advertising</li>
+      <li><strong>Google Firebase / Crashlytics</strong> — crash reporting (if enabled)</li>
+    </ul>
+    <p>We do <strong>not</strong> share your health or personal data with any other third parties, advertisers, or data brokers.</p>
+  </section>
+
+  <!-- 7. Data Retention -->
+  <section>
+    <div class="section-header">
+      <div class="icon-wrap">🗓️</div>
+      <h2>Data Retention &amp; Deletion</h2>
+    </div>
+    <p>We retain your data for as long as your account is active. You may request deletion of all your data at any time by contacting us at the email below.</p>
+    <p>Upon request, we will permanently delete your account and all associated health data from Supabase within <strong>30 days</strong>.</p>
+  </section>
+
+  <!-- 8. Your Rights -->
+  <section>
+    <div class="section-header">
+      <div class="icon-wrap">⚖️</div>
+      <h2>Your Rights</h2>
+    </div>
+    <p>You have the right to:</p>
+    <ul>
+      <li>Access the personal data we hold about you</li>
+      <li>Correct inaccurate data</li>
+      <li>Request deletion of your data ("Right to be Forgotten")</li>
+      <li>Withdraw consent for data processing at any time</li>
+      <li>Lodge a complaint with a data protection authority</li>
+    </ul>
+  </section>
+
+  <!-- 9. Children's Privacy -->
+  <section>
+    <div class="section-header">
+      <div class="icon-wrap">👧</div>
+      <h2>Children's Privacy</h2>
+    </div>
+    <p>Period Tracker is intended for users aged <strong>13 and above</strong>. We do not knowingly collect personal information from children under 13. If we discover such data has been collected, we will delete it immediately.</p>
+    <p>If you believe a child has provided us with personal data, please contact us immediately.</p>
+  </section>
+
+  <!-- 10. Security -->
+  <section>
+    <div class="section-header">
+      <div class="icon-wrap">🛡️</div>
+      <h2>Security</h2>
+    </div>
+    <p>We take security seriously. All data is transmitted using <strong>TLS/HTTPS encryption</strong> and stored with <strong>AES-256 encryption</strong> via Supabase. We regularly review our security practices.</p>
+    <p>However, no system is 100% secure. We encourage you to use a strong password and keep your account credentials private.</p>
+  </section>
+
+  <!-- 11. Policy Updates -->
+  <section>
+    <div class="section-header">
+      <div class="icon-wrap">🔄</div>
+      <h2>Changes to This Policy</h2>
+    </div>
+    <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date. We encourage you to review this policy periodically.</p>
+    <p>Continued use of the app after changes constitutes your acceptance of the updated policy.</p>
+  </section>
+
+  <!-- Contact -->
+  <div class="contact-card">
+    <h2>📬 Contact Us</h2>
+    <p>Questions about this Privacy Policy? We're here to help.</p>
+    <p><strong>Developer:</strong> Muhammad Usama</p>
+    <p><strong>Studio:</strong> Tn Tech Studio</p>
+    <p><strong>Email:</strong> <a href="mailto:tntechnologies38@gmail.com">tntechnologies38@gmail.com</a></p>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2025 <strong>Tn Tech Studio</strong> · Muhammad Usama · All rights reserved.</p>
+  <p style="margin-top:6px">MyCycle Period Tracker · Privacy Policy · Last updated June 2025</p>
+</footer>
+
+</body>
+</html>
